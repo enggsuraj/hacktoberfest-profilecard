@@ -8,6 +8,7 @@
 
 body {
   font-family: "Poppins", sans-serif;
+  background-color: #eee;
 }
 
 header {
@@ -33,7 +34,6 @@ a {
 }
 
 .container {
-  margin: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -42,9 +42,6 @@ a {
 
 .cardBox {
   margin: 10px;
-}
-
-.container a {
 }
 
 .firstinfo,
@@ -69,30 +66,30 @@ html {
 }
 
 .card {
-  width: 350px;
-  min-height: 100px;
-  padding: 20px;
-  border-radius: 3px;
+  width: 300px;
+  min-height: 50px;
+  padding: 15px;
   background-color: white;
-  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
   position: relative;
   overflow: hidden;
 }
 
 .card:hover {
   cursor: pointer;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+  transform: translate(-5px);
 }
 
 .card:after {
   content: "";
   display: block;
-  width: 190px;
-  height: 300px;
+  width: 150px;
+  height: 200px;
   background: cadetblue;
   position: absolute;
   transform: rotate(-30deg);
   top: -24px;
-  left: -78px;
+  left: -88px;
 }
 
 .firstinfo {
@@ -108,7 +105,7 @@ html {
 }
 
 .firstinfo .profileinfo {
-  padding: 0px 20px;
+  padding: 0px 15px;
 }
 
 .firstinfo .profileinfo h2 {
@@ -117,7 +114,7 @@ html {
 }
 
 .firstinfo .profileinfo p.bio {
-  padding: 10px 0px;
+  padding: 5px 0px;
   color: #5a5a5a;
   line-height: 1.2;
   font-style: initial;
