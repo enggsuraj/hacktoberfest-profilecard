@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+header {
+  text-align: center;
+  padding: 15px;
+}
+
+header p {
+  margin-top: 10px;
+}
+
+h1 {
+  font-size: 22px;
+}
+
+p {
+  font-size: 14px;
+}
+
+a {
+  outline: none;
+  text-decoration: none;
+}
+
+.container {
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.cardBox {
+  margin: 10px;
+}
+
+.container a {
+}
+
+.firstinfo,
+.badgescard {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+html {
+  height: 100%;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+.content {
+  position: relative;
+}
+
+.card {
+  width: 350px;
+  min-height: 100px;
+  padding: 20px;
+  border-radius: 3px;
+  background-color: white;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+  position: relative;
+  overflow: hidden;
+}
+
+.card:hover {
+  cursor: pointer;
+}
+
+.card:after {
+  content: "";
+  display: block;
+  width: 190px;
+  height: 300px;
+  background: cadetblue;
+  position: absolute;
+  transform: rotate(-30deg);
+  top: -24px;
+  left: -78px;
+}
+
+.firstinfo {
+  flex-direction: row;
+  z-index: 2;
+  position: relative;
+}
+
+.firstinfo img {
+  border-radius: 50%;
+  width: 70px;
+  height: 70px;
+}
+
+.firstinfo .profileinfo {
+  padding: 0px 20px;
+}
+
+.firstinfo .profileinfo h2 {
+  font-size: 16px;
+  color: black;
+}
+
+.firstinfo .profileinfo p.bio {
+  padding: 10px 0px;
+  color: #5a5a5a;
+  line-height: 1.2;
+  font-style: initial;
+}
