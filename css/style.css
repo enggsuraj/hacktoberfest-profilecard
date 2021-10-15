@@ -33,15 +33,41 @@ a {
   text-decoration: none;
 }
 
+.steps {
+  width: 80%;
+  margin: 0 auto;
+  background: cadetblue;
+  content: "";
+  text-align: center;
+  color: white;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.steps p {
+  padding: 5px;
+}
+
+.steps i {
+  padding: 5px;
+}
+
+.wrapper {
+  width: 80%;
+  margin: 0 auto;
+}
+
 .container {
+  width: 80%;
+  margin: 10px auto;
   display: flex;
-  justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 .cardBox {
-  margin: 10px;
+  margin: 20px 10px 0px 0px;
 }
 
 .firstinfo,
@@ -66,12 +92,13 @@ html {
 }
 
 .card {
-  width: 300px;
+  width: 290px;
   min-height: 50px;
   padding: 15px;
   background-color: white;
   position: relative;
   overflow: hidden;
+  border-radius: 5px;
 }
 
 .card:hover {
