@@ -172,3 +172,9 @@ html {
   line-height: 1.2;
   font-style: initial;
 }
+
+@media only screen and (max-width: 560px) {
+  .container {
+    width: 95%;
+  }
+}
