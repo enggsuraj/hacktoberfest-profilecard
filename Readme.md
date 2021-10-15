@@ -12,6 +12,8 @@ A month-long celebration from October 1st - 31st sponsored by [Digital Ocean](ht
 
 ## Getting started
 
+![banner](https://user-images.githubusercontent.com/6918020/137488512-17054592-d838-4065-bbe4-95aa53cb9bfd.png)
+
 - Fork this repository (Click the Fork button in the top right of this page, click your Profile Image)
 - Clone your fork down to your local machine
 
