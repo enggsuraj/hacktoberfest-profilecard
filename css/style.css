@@ -31,12 +31,24 @@ p {
 a {
   outline: none;
   text-decoration: none;
+  color: black;
 }
 
 .steps {
   width: 80%;
   margin: 0 auto;
   background: cadetblue;
+  content: "";
+  text-align: center;
+  color: white;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.sponser {
+  width: 80%;
+  margin: 10px auto;
+  background: rgb(42, 75, 77);
   content: "";
   text-align: center;
   color: white;
@@ -66,8 +78,22 @@ a {
   justify-content: center;
 }
 
+.pr {
+  text-align: center;
+  margin: 20px 0 10px 0;
+}
+
 .cardBox {
-  margin: 20px 10px 0px 0px;
+  margin: 10px 10px 0px 0px;
+}
+
+.pr {
+  width: 250px;
+  margin: 10px auto 0 auto;
+  color: white;
+  padding: 10px;
+  background: rgb(42, 75, 77);
+  border-radius: 5px;
 }
 
 .firstinfo,

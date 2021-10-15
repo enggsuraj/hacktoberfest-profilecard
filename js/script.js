@@ -1,8 +1,11 @@
 let container = document.querySelector(".container");
+let count = document.querySelector(".count");
 
 async function FetchData() {
   let response = await fetch("./data.json");
   let data = await response.json();
+
+  count.innerHTML = data.length;
 
   data.forEach((element) => {
     let cardBox = document.createElement("div");
