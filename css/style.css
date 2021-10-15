@@ -1,8 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 
-*,
-*:before,
-*:after {
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -72,7 +70,7 @@ header p {
 
 .container {
   width: 80%;
-  margin: 10px auto;
+  margin: 20px auto;
   display: flex;
   align-items: center;
   flex-wrap: wrap;
@@ -160,7 +158,13 @@ header p {
 }
 
 @media only screen and (max-width: 560px) {
-  .container {
+  .container,
+  .card {
+    width: 100%;
+  }
+
+  .steps,
+  .sponser {
     width: 95%;
   }
 }
