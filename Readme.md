@@ -43,8 +43,6 @@ git checkout -b branch-name
 Add your name to the `data.json` file using the below convention:
 
 ```markdown
-#### Name: [YOUR NAME](GitHub link)
-
 - Name: Your name
-- GitHub Username: [GitHub account name](GitHub link)
+- GitHub Username: GitHub user name
 ```
