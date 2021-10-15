@@ -28,14 +28,13 @@ git checkout -b branch-name
 - Make your changes (choose from any task below)
 - Commit and push
 
-````markdown
 - Create a new pull request from your forked repository (Click the `New Pull Request` button located at the top of your repo)
 - Wait for your PR review and merge approval!
 - **Star this repository** if you had fun!
 
 ## Choose from these tasks
 
-![data json](https://user-images.githubusercontent.com/6918020/137453335-ef4095f0-5a56-4d03-840f-d516d18e32d5.png)
+![datajson](https://user-images.githubusercontent.com/6918020/137453335-ef4095f0-5a56-4d03-840f-d516d18e32d5.png)
 
 ### 1. Add your name
 
@@ -47,4 +46,3 @@ Add your name to the `data.json` file using the below convention:
 - Name: Your name
 - GitHub Username: [GitHub account name](GitHub link)
 ```
-````
