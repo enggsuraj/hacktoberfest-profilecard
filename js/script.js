@@ -1,12 +1,14 @@
 let container = document.querySelector(".container");
 let count = document.querySelector(".count");
 
+// FETCH JSON DATA
 async function FetchData() {
   let response = await fetch("./data.json");
   let data = await response.json();
 
   count.innerHTML = data.length;
 
+  // DISPLAY FROM JSON
   data.forEach((element) => {
     let cardBox = document.createElement("div");
     cardBox.classList.add("cardBox");
