@@ -46,3 +46,5 @@ Add your name to the `data.json` file using the below convention:
 - Name: Your name
 - GitHub Username: GitHub user name
 ```
+
+### 2. Star the repo
