@@ -79,6 +79,19 @@ header p {
 
 .cardBox {
   margin: 10px 10px 0px 0px;
+  animation: fadeInUp 0.6s ease-out forwards;
+  opacity: 0;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .pr {
@@ -109,12 +122,20 @@ header p {
   position: relative;
   overflow: hidden;
   border-radius: 5px;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
 }
 
 .card:hover {
   cursor: pointer;
-  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
-  transform: translate(-5px);
+  box-shadow: 0px 20px 40px rgba(95, 158, 160, 0.4);
+  transform: translateY(-15px) scale(1.05) rotateZ(2deg);
+  animation: cardPulse 0.8s ease-in-out;
+}
+
+@keyframes cardPulse {
+  0%, 100% { transform: translateY(-15px) scale(1.05) rotateZ(2deg); }
+  50% { transform: translateY(-18px) scale(1.06) rotateZ(2deg); }
 }
 
 .card:after {
@@ -127,6 +148,23 @@ header p {
   transform: rotate(-30deg);
   top: -24px;
   left: -88px;
+  transition: all 0.4s ease;
+  animation: colorShift 3s ease-in-out infinite;
+}
+
+@keyframes colorShift {
+  0%, 100% { background: cadetblue; }
+  50% { background: #6a9fb5; }
+}
+
+.card:hover:after {
+  transform: rotate(-25deg) scale(1.2);
+  animation: colorPulse 0.6s ease-in-out infinite;
+}
+
+@keyframes colorPulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.7; }
 }
 
 .firstinfo {
@@ -139,6 +177,14 @@ header p {
   border-radius: 50%;
   width: 70px;
   height: 70px;
+  transition: all 0.4s ease;
+  border: 3px solid transparent;
+}
+
+.card:hover .firstinfo img {
+  transform: scale(1.15) rotate(360deg);
+  border: 3px solid cadetblue;
+  box-shadow: 0 0 20px rgba(95, 158, 160, 0.6);
 }
 
 .firstinfo .profileinfo {
@@ -148,6 +194,13 @@ header p {
 .firstinfo .profileinfo h2 {
   font-size: 16px;
   color: black;
+  transition: all 0.3s ease;
+}
+
+.card:hover .firstinfo .profileinfo h2 {
+  color: cadetblue;
+  transform: translateX(5px);
+  text-shadow: 2px 2px 4px rgba(95, 158, 160, 0.3);
 }
 
 .firstinfo .profileinfo p.bio {
@@ -155,6 +208,12 @@ header p {
   color: #5a5a5a;
   line-height: 1.2;
   font-style: initial;
+  transition: all 0.3s ease;
+}
+
+.card:hover .firstinfo .profileinfo p.bio {
+  color: #2c5f63;
+  transform: translateX(5px);
 }
 
 @media only screen and (max-width: 560px) {
